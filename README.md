@@ -41,6 +41,8 @@ Through this comprehensive guide, you will understand how to define, manipulate,
 
 ## 🗄️ SQL Language Breakdown
 
+<br>
+
 The SQL language is divided into three main components:
 
 1. [**Data Definition Language (DDL)**]()
@@ -49,13 +51,13 @@ The SQL language is divided into three main components:
   
 <br>
   
-2. **Data Manipulation Language (DML)**
+2. [**Data Manipulation Language (DML)**]()
    - Manages data within schema objects.
    - Examples: `INSERT`, `UPDATE`, `DELETE`.
   
 <br>
 
-3. **Data Query Language (DQL)**
+3. [**Data Query Language (DQL)**]()
    - Retrieves data from databases.
    - Example: `SELECT`.
 
