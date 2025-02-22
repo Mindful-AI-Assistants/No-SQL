@@ -12,7 +12,7 @@
 
 **Developed during the 3rd semester of the Data Science and Humanistic Artificial Intelligence undergraduate program at PUC-SP (2025)**  
 
-*Under the guidance of [Professor Doutor Daniel Gatti](https://www.linkedin.com/in/dgatti/)*
+*Under the guidance of [Professor Doutor Daniel Gatti](https://www.linkedin.com/in/dgatti/)*.
 
 
 <br>
