@@ -69,10 +69,10 @@ The SQL language is divided into three main components:
 
 #### [Create Table]()
 ```sql
-CREATE TABLE Pessoa (
+CREATE TABLE Person (
     ID INT PRIMARY KEY,
-    Nome VARCHAR(100) NOT NULL,
-    Idade INT,
+    Name VARCHAR(100) NOT NULL,
+    Age INT,
     Email VARCHAR(150) UNIQUE
 );
 ```
@@ -82,7 +82,7 @@ CREATE TABLE Pessoa (
 #### [ALTER TABLE]()
 
 ```sql
-ALTER TABLE Pessoa ADD Telefone VARCHAR(15);
+ALTER TABLE Person ADD Telefone VARCHAR(15);
 ```
 
 <br>
