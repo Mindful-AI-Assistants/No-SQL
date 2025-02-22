@@ -24,7 +24,7 @@ This project explores the fundamentals and practical applications of NoSQL (Not 
 <br>
 
 
-- **MySQL**
+- **MySQL**  - [Certificate]()
 - **SQL Server**
 - **T-SQL**
 - **MongoDB**
