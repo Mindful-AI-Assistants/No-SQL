@@ -67,7 +67,7 @@ The SQL language is divided into three main components:
 
 ### 📋 DDL – Data Definition Language
 
-#### Create Table
+#### [Create Table]()
 ```sql
 CREATE TABLE Pessoa (
     ID INT PRIMARY KEY,
@@ -79,12 +79,13 @@ CREATE TABLE Pessoa (
 
 <br>
 
-### ALTER TABLE 
+#### [ALTER TABLE]()
 
 ```sql
 ALTER TABLE Pessoa ADD Telefone VARCHAR(15);
 ```
 
+<br>
 
 
 
