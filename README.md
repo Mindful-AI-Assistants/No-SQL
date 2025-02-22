@@ -31,3 +31,7 @@ This project explores the fundamentals and practical applications of NoSQL (Not 
 - **SQL on Linux**
 - **Oracle**
 - **Redis**
+
+<br>
+
+Through this comprehensive guide, you will understand how to define, manipulate, and query data using SQL and NoSQL techniques, alongside practical examples.
