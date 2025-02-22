@@ -55,7 +55,7 @@ The SQL language is divided into three main components:
    - Retrieves data from databases.
    - Example: `SELECT`.
 
----
+<br>
 
 ## 🏗️ Practical Examples
 
@@ -69,6 +69,7 @@ CREATE TABLE Pessoa (
     Idade INT,
     Email VARCHAR(150) UNIQUE
 );
+```
 
 
 
