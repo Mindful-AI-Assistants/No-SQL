@@ -25,12 +25,12 @@ This project explores the fundamentals and practical applications of NoSQL (Not 
 
 
 - **MySQL**  - [Certificate]()
-- **SQL Server**
-- **T-SQL**
-- **MongoDB**
-- **SQL on Linux**
-- **Oracle**
-- **Redis**
+- **SQL Server** - [Certificate]()
+- **T-SQL** - [Certificate]()
+- **MongoDB** - [Certificate]()
+- **SQL on Linux** - [Certificate]()
+- **Oracle** - [Certificate]()
+- **Redis** - [Certificate]()
 
 <br>
 
