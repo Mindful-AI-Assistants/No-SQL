@@ -43,13 +43,17 @@ Through this comprehensive guide, you will understand how to define, manipulate,
 
 The SQL language is divided into three main components:
 
-1. **Data Definition Language (DDL)**
+1. [**Data Definition Language (DDL)**]()
    - Defines database schema and structures.
    - Examples: `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`.
+  
+<br>
   
 2. **Data Manipulation Language (DML)**
    - Manages data within schema objects.
    - Examples: `INSERT`, `UPDATE`, `DELETE`.
+  
+<br>
 
 3. **Data Query Language (DQL)**
    - Retrieves data from databases.
