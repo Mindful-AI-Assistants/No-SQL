@@ -51,5 +51,28 @@ The SQL language is divided into three main components:
    - Manages data within schema objects.
    - Examples: `INSERT`, `UPDATE`, `DELETE`.
 
+3. **Data Query Language (DQL)**
+   - Retrieves data from databases.
+   - Example: `SELECT`.
+
+---
+
+## 🏗️ Practical Examples
+
+### 📋 DDL – Data Definition Language
+
+#### Create Table
+```sql
+CREATE TABLE Pessoa (
+    ID INT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Idade INT,
+    Email VARCHAR(150) UNIQUE
+);
+
+
+
+
+
 
 
