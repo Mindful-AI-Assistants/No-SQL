@@ -77,6 +77,15 @@ CREATE TABLE Pessoa (
 );
 ```
 
+<br>
+
+### ALTER TABLE 
+
+```sql
+ALTER TABLE Pessoa ADD Telefone VARCHAR(15);
+```
+
+
 
 
 
