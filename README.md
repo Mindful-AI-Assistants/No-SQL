@@ -5,19 +5,19 @@
 #### <p align="center"> [![Sponsor Mindful AI Assistants](https://img.shields.io/badge/Sponsor-Mindful%20AI%20%20Assistants-brightgreen?logo=GitHub)](https://github.com/sponsors/Mindful-AI-Assistants)
 
 
+<br>
+
+
+
+<br>
+
 
 **Developed during the 3rd semester of the Data Science and Humanistic Artificial Intelligence undergraduate program at PUC-SP (2025)**  
 
 *Under the guidance of Professor Daniel Gatti*
 
 
-<br><br>
-
-
-
-
-
-<br><br>
+<br>
 
 ## 📖 Overview
 
