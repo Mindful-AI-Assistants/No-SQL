@@ -41,3 +41,9 @@ Through this comprehensive guide, you will understand how to define, manipulate,
 
 ## 🗄️ SQL Language Breakdown
 
+The SQL language is divided into three main components:
+
+1. **Data Definition Language (DDL)**
+   - Defines database schema and structures.
+   - Examples: `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE`.
+
