@@ -8,7 +8,7 @@
 <br><br>
 
 
-## [About This Repo]()
+## [About No-SQL Repo]()
 
 **Developed during the 3rd semester of the Data Science and Humanistic Artificial Intelligence undergraduate program at PUC-SP (2025)**  
 
