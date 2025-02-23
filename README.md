@@ -87,6 +87,8 @@ ALTER TABLE Person ADD Telefone VARCHAR(15);
 
 <br>
 
+#### Drop Table
+
 
 
 
