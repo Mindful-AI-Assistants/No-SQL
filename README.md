@@ -89,6 +89,10 @@ ALTER TABLE Person ADD Telefone VARCHAR(15);
 
 #### Drop Table
 
+```sql
+DROP TABLE Person;
+```
+
 
 
 
