@@ -2,6 +2,9 @@
 <br>
 
 # 🛢️ NoSQL: Building Databases in Practice (Not Only SQL)
+
+<br><br>
+
 #### <p align="center"> [![Sponsor Mindful AI Assistants](https://img.shields.io/badge/Sponsor-Mindful%20AI%20%20Assistants-brightgreen?logo=GitHub)](https://github.com/sponsors/Mindful-AI-Assistants)
 
 
