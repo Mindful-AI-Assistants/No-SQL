@@ -105,7 +105,7 @@ DROP TABLE Person;
 #### [Insert Data]()
 
 ```sql
-INSERT INTO Pessoa (ID, Nome, Idade, Email)
+INSERT INTO Pessoa (ID, Name, Age, Email)
 VALUES (1, 'Maria Silva', 30, 'maria.silva@example.com');
 ```
 
@@ -113,6 +113,11 @@ VALUES (1, 'Maria Silva', 30, 'maria.silva@example.com');
 
 #### [Update Data]()
 
+```sql
+UPDATE Peson
+SET Age = 31
+WHERE ID = 1;
+```
 
 
 
