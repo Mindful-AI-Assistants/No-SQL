@@ -96,6 +96,12 @@ ALTER TABLE Person ADD Telefone VARCHAR(15);
 DROP TABLE Person;
 ```
 
+<br>
+
+#### DML – Data Manipulation Language
+
+
+
 
 
 
