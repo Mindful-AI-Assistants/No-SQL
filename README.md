@@ -139,6 +139,15 @@ WHERE Age > 25;
 ### 🔑 Primary Key Example
 
 
+```sql
+CREATE TABLE Venda (
+NumCliente INT NOT NULL IDENTITY(1,1),
+CPF INT NOT NULL,
+CONSTRAINT pkClient PRIMARY KEY (NumCliente))
+```
+
+
+
 
 
 
