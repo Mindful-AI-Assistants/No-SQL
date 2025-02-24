@@ -146,6 +146,10 @@ CPF INT NOT NULL,
 CONSTRAINT pkClient PRIMARY KEY (NumCliente))
 ```
 
+<br>
+
+#### ✅ Check Constraint Example
+
 
 
 
