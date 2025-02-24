@@ -98,7 +98,7 @@ DROP TABLE Person;
 
 <br>
 
-## 🛠️ DML – Data Manipulation Language
+### 🛠️ DML – Data Manipulation Language
 
 <br>
 
@@ -121,7 +121,7 @@ WHERE ID = 1;
 
 <br>
 
-## 🔍 DQL – Data Query Language
+### 🔍 DQL – Data Query Language
 
 <br>
 
@@ -132,7 +132,11 @@ SELECT Name, Email
 FROM Person
 WHERE Age > 25;
 ```
+<br>
 
+## ⚙️ Advanced SQL Concepts
+
+### 🔑 Primary Key Example
 
 
 
