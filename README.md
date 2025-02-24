@@ -162,4 +162,3 @@ ADD CONSTRAINT ckIdade CHECK (Idade <= 100);
 
 
 
-
