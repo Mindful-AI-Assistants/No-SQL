@@ -127,6 +127,13 @@ WHERE ID = 1;
 
 #### [Select Data]()
 
+```sql
+SELECT Name, Email
+FROM Person
+WHERE Age > 25;
+```
+
+
 
 
 
