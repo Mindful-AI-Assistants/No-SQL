@@ -150,6 +150,11 @@ CONSTRAINT pkClient PRIMARY KEY (NumCliente))
 
 #### ✅ Check Constraint Example
 
+```sql
+ALTER TABLE Pessoa
+ADD CONSTRAINT ckIdade CHECK (Idade <= 100);
+```
+
 
 
 
