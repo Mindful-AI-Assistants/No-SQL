@@ -119,6 +119,13 @@ SET Age = 31
 WHERE ID = 1;
 ```
 
+<br>
+
+## 🔍 DQL – Data Query Language
+
+<br>
+
+#### [Select Data]()
 
 
 
