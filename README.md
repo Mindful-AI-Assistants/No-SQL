@@ -217,9 +217,19 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-🙌 Acknowledgements
+### 🙌 Acknowledgements
 
 Special thanks to Professor [Daniel Gatti]() for guidance throughout this project.
+
+<br>
+
+### 📫 Contact
+
+For any inquiries or feedback, feel free to reach out:
+
+Fabiana 🚀 Campanari – Humanistic Artificial Intelligence Data Scientist
+
+📧 [email me](fabicampanari@protonme.com)
 
 
 
