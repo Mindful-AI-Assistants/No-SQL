@@ -170,7 +170,7 @@ CREATE TABLE Produtos (
 
 ## 🍃 NoSQL – MongoDB Example
 
-Example
+### Example
 
 📦 Creating a Collection and Inserting Documents
 
@@ -188,6 +188,10 @@ db.usuarios.insertMany([
     { nome: "Carlos Lima", idade: 35, email: "carlos.lima@example.com" }
 ]);
 ```
+
+<br>
+
+🔍 Querying Documents
 
 
 
