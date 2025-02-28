@@ -231,7 +231,7 @@ Fabiana 🚀 Campanari – Humanistic Artificial Intelligence Data Scientist
 
 🛸 [My Contacts Hub]()
 
-📧 [email me](mailto:fabicampanari@protonme.com)
+💌 [email me](mailto:fabicampanari@protonme.com)
 
 
 
