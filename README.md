@@ -136,7 +136,7 @@ WHERE Age > 25;
 
 ## ⚙️ Advanced SQL Concepts
 
-#### 🔑 Primary Key Example
+#### 🔑 [Primary Key Example]()
 
 ```sql
 CREATE TABLE Sale (
