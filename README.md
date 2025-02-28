@@ -229,7 +229,10 @@ For any inquiries or feedback, feel free to reach out:
 
 Fabiana 🚀 Campanari – Humanistic Artificial Intelligence Data Scientist
 
+🛸 [My Contacts Hub]()
+
 📧 [email me](mailto:fabicampanari@protonme.com)
+
 
 
 
