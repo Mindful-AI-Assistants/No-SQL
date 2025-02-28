@@ -170,6 +170,27 @@ CREATE TABLE Produtos (
 
 ## 🍃 NoSQL – MongoDB Example
 
+Example
+
+📦 Creating a Collection and Inserting Documents
+
+```sql
+// Inserting a single document
+db.usuarios.insertOne({
+    nome: "João Silva",
+    idade: 28,
+    email: "joao.silva@example.com"
+});
+
+// Inserting multiple documents
+db.usuarios.insertMany([
+    { nome: "Ana Souza", idade: 24, email: "ana.souza@example.com" },
+    { nome: "Carlos Lima", idade: 35, email: "carlos.lima@example.com" }
+]);
+```
+
+
+
 
 
 
