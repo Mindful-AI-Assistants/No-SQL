@@ -202,7 +202,20 @@ db.usuarios.findOne({ email: "ana.souza@example.com" });
 
 <br>
 
+#### ⚡ [Updating and Deleting Documents]()
 
+```sql
+// Update user age
+db.usuarios.updateOne(
+    { name: "João Silva" },
+    { $set: { idade: 29 } }
+);
+
+// Delete user
+db.usuarios.deleteOne({ name: "Carlos Lima" });
+```
+
+<br>
 
 
 
