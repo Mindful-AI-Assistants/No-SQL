@@ -192,6 +192,16 @@ db.usuarios.insertMany([
 
 #### 🔍 [Querying Documents]()
 
+```sql
+// Find users older than 25
+db.usuarios.find({ age: { $gt: 25 } });
+
+// Find user by email
+db.usuarios.findOne({ email: "ana.souza@example.com" });
+```
+
+<br>
+
 
 
 
