@@ -226,16 +226,34 @@ Special thanks to Professor [Daniel Gatti]() for guidance throughout this projec
 
 <br>
 
-### 📫 Contact
+##  Feel Free to [Reach Out:]()
 
-For any inquiries or feedback, feel free to reach out:
+### 💌 [Email Me](mailto:fabicampanari@proton.me)
 
-Fabiana 🚀 Campanari – Humanistic Artificial Intelligence Data Scientist
+<br>
 
-🛸 [My Contacts Hub]()
 
-💌 [email me](mailto:fabicampanari@protonme.com)
+#### <p align="center">  🛸๋ My Contacts [Hub](https://linktr.ee/fabianacampanari)
 
+
+<br>
+
+### <p align="center"> <img src="https://github.com/user-attachments/assets/517fc573-7607-4c5d-82a7-38383cc0537d" />
+
+
+<br><br>
+
+<p align="center">  ────────────── ⊹🔭๋ ──────────────
+
+<br>
+
+<p align="center"> ➣➢➤ <a href="#top">Back to Top </a>
+  
+
+  
+#
+ 
+##### <p align="center">Copyright 2025 Mindful-AI-Assistants. Code released under the  [MIT license.]( https://github.com/Mindful-AI-Assistants/.github/blob/ad6948fdec771e022d49cd96f99024fcc7f1106a/LICENSE)
 
 
 
