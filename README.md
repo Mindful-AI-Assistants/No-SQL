@@ -169,9 +169,9 @@ CREATE TABLE Produtos (
 
 ## 🍃 NoSQL – MongoDB Example
 
-### Example
+### Examplea
 
-📦 Creating a Collection and Inserting Documents
+#### [📦 Creating a Collection and Inserting Documents]()
 
 ```sql
 // Inserting a single document
@@ -190,7 +190,7 @@ db.usuarios.insertMany([
 
 <br>
 
-🔍 Querying Documents
+#### 🔍 [Querying Documents]()
 
 
 
