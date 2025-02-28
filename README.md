@@ -8,7 +8,7 @@
 #### <p align="center"> [![Sponsor Mindful AI Assistants](https://img.shields.io/badge/Sponsor-Mindful%20AI%20%20Assistants-brightgreen?logo=GitHub)](https://github.com/sponsors/Mindful-AI-Assistants)
 
 
-![Image](https://github.com/user-attachments/assets/bff3bec2-dd3a-4290-8120-f7b52d8ba0b2)
+### <p align="center"> <img width="425" alt="Automation Workflow" src"https://github.com/user-attachments/assets/bff3bec2-dd3a-4290-8120-f7b52d8ba0b2" />
 
 
 <br><br>
