@@ -176,15 +176,15 @@ CREATE TABLE Produtos (
 ```sql
 // Inserting a single document
 db.usuarios.insertOne({
-    nome: "João Silva",
-    idade: 28,
+    name: "João Silva",
+    age: 28,
     email: "joao.silva@example.com"
 });
 
 // Inserting multiple documents
 db.usuarios.insertMany([
-    { nome: "Ana Souza", idade: 24, email: "ana.souza@example.com" },
-    { nome: "Carlos Lima", idade: 35, email: "carlos.lima@example.com" }
+    { name: "Ana Souza", age: 24, email: "ana.souza@example.com" },
+    { name: "Carlos Lima", age: 35, email: "carlos.lima@example.com" }
 ]);
 ```
 
