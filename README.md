@@ -134,7 +134,7 @@ WHERE Age > 25;
 ```
 <br>
 
-## ⚙️ Advanced SQL Concepts
+### ⚙️ Advanced SQL Concepts
 
 #### 🔑 [Primary Key Example]()
 
@@ -147,7 +147,7 @@ CONSTRAINT pkClient PRIMARY KEY (NumClient))
 
 <br>
 
-#### ✅ Check Constraint Example
+#### ✅ [Check Constraint Example]()
 
 ```sql
 ALTER TABLE Perspn
@@ -156,7 +156,7 @@ ADD CONSTRAINT ckIdade CHECK (Age <= 100);
 
 <br>
 
-🔄 Identity Property (SQL Server)
+#### 🔄 [Identity Property (SQL Server)]()
 
 ```sql
 CREATE TABLE Produtos (
@@ -165,7 +165,7 @@ CREATE TABLE Produtos (
 );
 ```
 
-<br><Br>
+<br>
 
 ## 🍃 NoSQL – MongoDB Example
 
