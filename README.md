@@ -105,7 +105,7 @@ DROP TABLE Person;
 #### [Insert Data]()
 
 ```sql
-INSERT INTO Pessoa (ID, Name, Age, Email)
+INSERT INTO Person (ID, Name, Age, Email)
 VALUES (1, 'Maria Silva', 30, 'maria.silva@example.com');
 ```
 
@@ -140,10 +140,10 @@ WHERE Age > 25;
 
 
 ```sql
-CREATE TABLE Venda (
+CREATE TABLE Sale (
 NumCliente INT NOT NULL IDENTITY(1,1),
 CPF INT NOT NULL,
-CONSTRAINT pkClient PRIMARY KEY (NumCliente))
+CONSTRAINT pkClient PRIMARY KEY (NumClient))
 ```
 
 <br>
@@ -151,8 +151,19 @@ CONSTRAINT pkClient PRIMARY KEY (NumCliente))
 #### ✅ Check Constraint Example
 
 ```sql
-ALTER TABLE Pessoa
-ADD CONSTRAINT ckIdade CHECK (Idade <= 100);
+ALTER TABLE Perspn
+ADD CONSTRAINT ckIdade CHECK (Age <= 100);
+```
+
+<br>
+
+🔄 Identity Property (SQL Server)
+
+```sql
+CREATE TABLE Produtos (
+    ProdutoID INT IDENTITY(1,1) PRIMARY KEY,
+    NomeProduto VARCHAR(100) NOT NULL
+);
 ```
 
 
