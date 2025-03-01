@@ -172,7 +172,6 @@ CREATE TABLE Produtos (
 
 ## 🍃 NoSQL – MongoDB Example
 
-### Examplea
 
 #### [📦 Creating a Collection and Inserting Documents]()
 
