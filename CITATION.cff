@@ -1,0 +1,12 @@
+
+cff-version: 1.2.0
+title: No-SQL
+orgabization: Mindful-AI-Assistants
+contact me: https://linktr.ee/fabianacampanari
+message: If you really want to cite this repository, here's how you should cite it.
+type: software
+authors:
+  - given-names: Fabiana
+    family-names: Rotella Campanari
+repository-code: https://github.com/Mindful-AI-Assistants/No-SQL
+license: MIT license
