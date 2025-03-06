@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+    <title>Adicionar aluno</title>
+</head>
+
+<body>
+    <a href="index.php">Voltar para a lista de alunos</a>
+    <br/><br/>
+
+    <form action="add.php" method="post" name="form1">
+        <table width="25%" border="0">
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>Idade</td>
+                <td><input type="text" name="idade"></td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>
+                <select name="sexo">
+                  <option value="0">Selecione</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Turma</td>
+                <td><input type="text" name="turma"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Submit" value="Adicionar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
