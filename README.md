@@ -88,7 +88,15 @@ The SQL language is divided into three main components:
 
 ### 📋 DDL – Data Definition Language
 
-#### [Select Command]()
+#### [Select Commands using Oracle]()
+
+```sql
+select*from HR. COUNTRIES
+select COUNTRY_NAME from HR.COUNTRIES 
+select COUNTRY_ID from HR.COUNTRIES 
+select REGION_ID from HR.COUNTRIES 
+select*from hr.REGIONS
+```
 
 ```sql
 SELECT country_id, country_name, region_name
