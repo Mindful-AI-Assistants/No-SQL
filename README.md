@@ -119,7 +119,7 @@ VALUES (1, 'Maria Silva', 30, 'maria.silva@example.com');
 #### [Update Data]()
 
 ```sql
-UPDATE Peson
+UPDATE Person
 SET Age = 31
 WHERE ID = 1;
 ```
@@ -155,7 +155,7 @@ CONSTRAINT pkClient PRIMARY KEY (NumClient))
 #### ✅ [Check Constraint Example]()
 
 ```sql
-ALTER TABLE Perspn
+ALTER TABLE Person
 ADD CONSTRAINT ckIdade CHECK (Age <= 100);
 ```
 
