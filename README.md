@@ -25,6 +25,11 @@
 
 <br>
 
+
+https://livesql.oracle.com/landing/
+
+<br>
+
 ## [Books]()
 
 #### ➢ Get the Book  [Database Systems – Navathe, 6th Edition](https://github.com/Mindful-AI-Assistants/No-SQL/blob/ff7422d3ccfbfbc5280262c7a2d015ce5ef76e80/Database%20Systems%20%E2%80%93%20Navathe%2C%206th%20Edition.pdf)
