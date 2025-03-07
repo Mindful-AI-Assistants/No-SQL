@@ -88,6 +88,16 @@ The SQL language is divided into three main components:
 
 ### 📋 DDL – Data Definition Language
 
+#### [Select Command]()
+
+```sql
+SELECT country_id, country_name, region_name
+FROM HR.COUNTRIES, HR.REGIONS
+Where hr.COUNTRIES.region_id = HR.regions.REGION_ID
+```
+
+<br>
+
 #### [Create Table]()
 ```sql
 CREATE TABLE Person (
