@@ -26,7 +26,7 @@
 <br>
 
 
-https://livesql.oracle.com/landing/
+[Oracle SQL LIVE](https://livesql.oracle.com/landing/)
 
 <br>
 
