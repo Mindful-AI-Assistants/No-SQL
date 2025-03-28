@@ -27,19 +27,19 @@
 
 ## Online Tools
 
-### ➢➣ Oracle [SQL LIVE](https://livesql.oracle.com/landing/)
+#### ➢➣ Oracle [SQL LIVE](https://livesql.oracle.com/landing/)
 
-### ➣➢ BRM Model [Web](https://app.brmodeloweb.com)
+#### ➣➢ BRM Model [Web](https://app.brmodeloweb.com)
 
-### ➣➢ Redis [Database](https://cloud.redis.io/#/new-customer/new-database)
+#### ➣➢ Redis [Database](https://cloud.redis.io/#/new-customer/new-database)
 
-### ➣➢ [Mermaid](https://mermaid.js.org/community/contributing.html)
+#### ➣➢ [Mermaid](https://mermaid.js.org/community/contributing.html)
 
 <br>
 
 ## Dowloaded Tools
 
-[PostgreSQL](https://www.postgresql.org/download/)
+➣➢ [PostgreSQL](https://www.postgresql.org/download/)
 
 
 <br>
