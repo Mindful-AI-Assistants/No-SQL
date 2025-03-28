@@ -33,7 +33,7 @@
 
 #### ➣➢ Redis [Database](https://cloud.redis.io/#/new-customer/new-database)
 
-#### ➣➢ [Mermaid](https://mermaid.js.org/community/contributing.html)
+#### ➣➢ [Mermaid](https://mermaid.js.org/community/contributing.html) FlowChart and Diagrams
 
 <br>
 
