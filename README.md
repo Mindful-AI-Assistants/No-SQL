@@ -31,6 +31,8 @@
 
 ### ➣➢ BRM Model [Web](https://app.brmodeloweb.com)
 
+### Redis [Database](https://cloud.redis.io/#/new-customer/new-database)
+
 <br>
 
 ## Books
