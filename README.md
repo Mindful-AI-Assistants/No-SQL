@@ -1,8 +1,8 @@
 
 <br>
 
-# 🛢️ [NoSQL](): Building Databases in Practice
-### Not Only SQL)
+# <p align="center"> 🛢️ [NoSQL](): Building Databases in Practice
+### <p align="center"> Not Only SQL
 
 
 
