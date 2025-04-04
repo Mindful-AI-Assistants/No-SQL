@@ -77,7 +77,7 @@ Through this comprehensive guide, you will understand how to define, manipulate,
 
 ## Entity Relationship Conceptual Modeling
 
-➢ WorKClass [Example]()
+➢ WorKClass [Example](https://github.com/user-attachments/assets/7d2a2e17-1e31-4f21-89ce-14b1fcd0f636)
  
 
 
