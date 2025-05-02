@@ -340,6 +340,13 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 - Stakeholders: StakeholderID, Name, Role, ProjectID.
 - Objectives: ObjectiveID, Description, ProjectID.
 
+<br>
+
+6. Physical Model
+The physical model includes the SQL schema for the database.
+
+<br>
+
 
 
 
