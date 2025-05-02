@@ -305,12 +305,12 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 ## 2. Stakeholders
 
-- **Head of Architecture:** Oversees project creation and management.
-- **Project Managers:** Manage projects and activities.
-- **Team Members:** Execute activities.
-- **Clients:** Provide requirements and feedback.
+- [**Head of Architecture**](): Oversees project creation and management.
+- [**Project Managers**](): Manage projects and activities.
+- [**Team Members**](): Execute activities.
+- [**Clients**](): Provide requirements and feedback.
 
-
+<br>
 
 
 
