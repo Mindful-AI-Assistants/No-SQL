@@ -320,7 +320,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
   
 <br>
 
-5. [Conceptual Model]():
+4. [Conceptual Model]():
    
 - The conceptual model focuses on high-level entities and their relationships:
 - [Entities](): Project, Activity, Stakeholder, Objective.
@@ -328,6 +328,17 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 - A project has multiple activities.
 - A project has multiple stakeholders.
 - A project has multiple objectives.
+
+<br>
+
+5. [Logical Model]():
+   
+- The logical model defines the structure of the database:
+- [Tables]():
+- Projects: ProjectID, Name, Description, StartDate, EndDate, Status.
+- Activities: ActivityID, Name, Description, StartDate, EndDate, ProjectID.
+- Stakeholders: StakeholderID, Name, Role, ProjectID.
+- Objectives: ObjectiveID, Description, ProjectID.
 
 
 
