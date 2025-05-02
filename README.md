@@ -291,7 +291,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-1. [List of Requirements](_):
+1. [List of Requirements]():
    
 - Store project data: Include project name, description, start date, end date, and status.
 - Track activities: Include activity name, description, start date, end date, and associated project.
@@ -301,7 +301,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-2. [List of Stakeholders]()
+2. [List of Stakeholders]():
    
 - [Head of Architecture](): Oversees project creation and management.
 - [Project Managers](): Manage individual projects and activities.
@@ -310,13 +310,32 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-3. [Definitions]()
+3. [Definitions]():
    
 - [Stakeholders](): Individuals or groups involved in or affected by the project.
 - [Project](): A temporary endeavor undertaken to create a unique product, service, or result.
 - [Activity](): A task or set of tasks performed as part of a project.
 - [Objective](): A specific result that a project aims to achieve.
 - [Schedule](): A timeline for completing project activities.
+  
+<br>
+
+5. [Conceptual Model]():
+   
+- The conceptual model focuses on high-level entities and their relationships:
+- Entities: Project, Activity, Stakeholder, Objective.
+### - Relationships:
+- A project has multiple activities.
+- A project has multiple stakeholders.
+- A project has multiple objectives.
+
+
+
+
+
+
+
+
 
 
 
