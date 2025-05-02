@@ -323,8 +323,8 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 5. [Conceptual Model]():
    
 - The conceptual model focuses on high-level entities and their relationships:
-- Entities: Project, Activity, Stakeholder, Objective.
-### - Relationships:
+- [Entities](): Project, Activity, Stakeholder, Objective.
+- [Relationships]():
 - A project has multiple activities.
 - A project has multiple stakeholders.
 - A project has multiple objectives.
