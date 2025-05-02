@@ -293,7 +293,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-## 1. Requirements
+## [1.]() Requirements
 
 - [**Store project data**](): Project name, description, start date, end date, status.
 - [**Track activities**](): Activity name, description, start date, end date, associated project.
@@ -303,7 +303,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-## 2. Stakeholders
+## [2.]() Stakeholders
 
 - [**Head of Architecture**](): Oversees project creation and management.
 - [**Project Managers**](): Manage projects and activities.
@@ -312,7 +312,15 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
+## [3.]() Definitions
 
+- **Stakeholders:** Individuals or groups involved or affected by the project.
+- **Project:** Temporary endeavor to create a unique product, service, or result.
+- **Activity:** Task(s) performed as part of a project.
+- **Objective:** Specific result a project aims to achieve.
+- **Schedule:** Timeline for completing project activities.
+
+<br>
 
 
 
