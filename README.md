@@ -295,13 +295,21 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 ## 1. Requirements
 
-- **Store project data:** Project name, description, start date, end date, status.
-- **Track activities:** Activity name, description, start date, end date, associated project.
-- **Stakeholder management:** Stakeholder name, role, associated projects.
-- **Objectives:** Objectives for each project.
-- **Schedule tracking:** Timelines for projects and activities.
+- [**Store project data**](): Project name, description, start date, end date, status.
+- [**Track activities**](): Activity name, description, start date, end date, associated project.
+- [**Stakeholder management:** Stakeholder name, role, associated projects.
+- **Objectives**](): Objectives for each project.
+- [**Schedule tracking**](): Timelines for projects and activities.
 
 <br>
+
+## 2. Stakeholders
+
+- **Head of Architecture:** Oversees project creation and management.
+- **Project Managers:** Manage projects and activities.
+- **Team Members:** Execute activities.
+- **Clients:** Provide requirements and feedback.
+
 
 
 
