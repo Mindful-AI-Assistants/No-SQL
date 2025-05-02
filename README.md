@@ -289,82 +289,19 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 - Your company was asked to create a database to store project data. In this request,
 - Your company must deliver a report with the following elements: A list of requirements List of stakeholders Conceptual Model Logical Model Physical Model SQL Code Creation of the template on livesql.oracle.com. Search and define: Stakeholders:
 
-<br>
-
-1. [List of Requirements]():
-   
-- Store project data: Include project name, description, start date, end date, and status.
-- Track activities: Include activity name, description, start date, end date, and associated project.
-- Stakeholder management: Include stakeholder name, role, and associated projects.
-- Objectives: Store objectives for each project.
-- Schedule tracking: Include timelines for projects and activities.
+### ***This project provides a complete overview and SQL scripts for managing a project database including projects, activities, stakeholders, and objectives***.
 
 <br>
 
-2. [List of Stakeholders]():
-   
-- [Head of Architecture](): Oversees project creation and management.
-- [Project Managers](): Manage individual projects and activities.
-- [Team Members](): Execute activities within projects.
-- [Clients: Provid]()e requirements and feedback.
+## 1. Requirements
+
+- **Store project data:** Project name, description, start date, end date, status.
+- **Track activities:** Activity name, description, start date, end date, associated project.
+- **Stakeholder management:** Stakeholder name, role, associated projects.
+- **Objectives:** Objectives for each project.
+- **Schedule tracking:** Timelines for projects and activities.
 
 <br>
-
-3. [Definitions]():
-   
-- [Stakeholders](): Individuals or groups involved in or affected by the project.
-- [Project](): A temporary endeavor undertaken to create a unique product, service, or result.
-- [Activity](): A task or set of tasks performed as part of a project.
-- [Objective](): A specific result that a project aims to achieve.
-- [Schedule](): A timeline for completing project activities.
-  
-<br>
-
-4. [Conceptual Model]():
-   
-- The conceptual model focuses on high-level entities and their relationships:
-- [Entities](): Project, Activity, Stakeholder, Objective.
-- [Relationships]():
-- A project has multiple activities.
-- A project has multiple stakeholders.
-- A project has multiple objectives.
-
-<br>
-
-5. [Logical Model]():
-   
-- The logical model defines the structure of the database:
-- [Tables]():
-- Projects: ProjectID, Name, Description, StartDate, EndDate, Status.
-- Activities: ActivityID, Name, Description, StartDate, EndDate, ProjectID.
-- Stakeholders: StakeholderID, Name, Role, ProjectID.
-- Objectives: ObjectiveID, Description, ProjectID.
-
-<br>
-
-6. [Physical Model]()
-
-- The physical model includes the SQL schema for the database.
-
-<br>
-
-7. [SQL Code]()
-
-- Below is the SQL code to create the database schema:
-
-<br>
-
-➢ Create Stakeholders table
-
-8. [Template on livesql.oracle.com]()
-
-- You can copy the above SQL code and execute it on LiveSQL to create the database schema.
-
-<br>
-
-
-
-
 
 
 
