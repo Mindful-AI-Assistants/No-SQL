@@ -308,7 +308,15 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 - [Team Members](): Execute activities within projects.
 - [Clients: Provid]()e requirements and feedback.
 
+<br>
 
+3. [Definitions]()
+   
+- [Stakeholders](): Individuals or groups involved in or affected by the project.
+- [Project](): A temporary endeavor undertaken to create a unique product, service, or result.
+- [Activity](): A task or set of tasks performed as part of a project.
+- [Objective](): A specific result that a project aims to achieve.
+- [Schedule](): A timeline for completing project activities.
 
 
 
