@@ -289,6 +289,16 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 - Your company was asked to create a database to store project data. In this request,
 - Your company must deliver a report with the following elements: A list of requirements List of stakeholders Conceptual Model Logical Model Physical Model SQL Code Creation of the template on livesql.oracle.com. Search and define: Stakeholders:
 
+<br>
+
+1. [List of Requirements](_):
+   
+- Store project data: Include project name, description, start date, end date, and status.
+- Track activities: Include activity name, description, start date, end date, and associated project.
+- Stakeholder management: Include stakeholder name, role, and associated projects.
+- Objectives: Store objectives for each project.
+- Schedule tracking: Include timelines for projects and activities.
+
 
 
 
