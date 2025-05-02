@@ -299,9 +299,15 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 
 
-<br><br>
 
-### 🙌 Acknowledgements
+
+
+
+
+
+<br><br><br><br>
+
+### 💙 Acknowledgements
 
 Special thanks to Professor [Daniel Gatti]() for guidance throughout this project.
 
