@@ -480,6 +480,27 @@ WHERE
 p.ProjectID = 1; -- Replace "1" with desired ProjectID
 ```
 
+<br>
+
+## 8. Drop Tables (Oracle Live SQL)
+
+To delete tables safely respecting foreign key constraints, drop in this order:
+
+
+```sql
+DROP TABLE Objectives CASCADE CONSTRAINTS;
+DROP TABLE Stakeholders CASCADE CONSTRAINTS;
+DROP TABLE Activities CASCADE CONSTRAINTS;
+DROP TABLE Projects CASCADE CONSTRAINTS;
+```
+
+- **Note:** `CASCADE CONSTRAINTS` automatically removes dependent foreign keys.
+- Always drop child tables before parent tables to avoid constraint errors.
+
+<br>
+
+
+
 
 
 
