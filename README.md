@@ -403,6 +403,31 @@ ON DELETE CASCADE
 );
 ```
 
+<br>
+
+## [7.]() Example Queries
+
+### List all activities with their associated project details
+
+```sql
+SELECT
+a.ActivityID,
+a.Name AS ActivityName,
+a.Description AS ActivityDescription,
+a.StartDate AS ActivityStartDate,
+a.EndDate AS ActivityEndDate,
+p.Name AS ProjectName,
+p.Description AS ProjectDescription
+FROM
+Activities a
+JOIN
+Projects p ON a.ProjectID = p.ProjectID;
+```
+
+
+
+
+
 
 
 
