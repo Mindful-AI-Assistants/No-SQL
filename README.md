@@ -407,7 +407,7 @@ ON DELETE CASCADE
 
 ## [7.]() Example Queries
 
-### List all activities with their associated project details
+### - [List all activities with their associated project details]()
 
 ```sql
 SELECT
@@ -424,7 +424,22 @@ JOIN
 Projects p ON a.ProjectID = p.ProjectID;
 ```
 
+<br>
 
+### [List all stakeholders and their associated projects]()
+
+```sql
+SELECT
+s.StakeholderID,
+s.Name AS StakeholderName,
+s.Role AS StakeholderRole,
+p.Name AS ProjectName,
+p.Description AS ProjectDescription
+FROM
+Stakeholders s
+JOIN
+Projects p ON s.ProjectID = p.ProjectID;
+```
 
 
 
