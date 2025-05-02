@@ -314,11 +314,11 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 ## [3.]() Definitions
 
-- **Stakeholders:** Individuals or groups involved or affected by the project.
-- **Project:** Temporary endeavor to create a unique product, service, or result.
-- **Activity:** Task(s) performed as part of a project.
-- **Objective:** Specific result a project aims to achieve.
-- **Schedule:** Timeline for completing project activities.
+- [**Stakeholders**](): Individuals or groups involved or affected by the project.
+- [**Project**](): Temporary endeavor to create a unique product, service, or result.
+- [**Activity**](): Task(s) performed as part of a project.
+- [**Objective**](): Specific result a project aims to achieve.
+- [**Schedule**](): Timeline for completing project activities.
 
 <br>
 
