@@ -499,7 +499,12 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 <br>
 
+## [9.]() How to Execute on Oracle Live SQL
 
+1. Visit [Oracle Live SQL](https://livesql.oracle.com).
+2. Log in or create an account.
+3. Copy and paste the SQL code blocks above into the worksheet.
+4. Run the scripts to create tables, insert data, query, or drop tables.
 
 
 
