@@ -457,7 +457,28 @@ JOIN
 Projects p ON o.ProjectID = p.ProjectID;
 ```
 
+<br>
 
+### ➢ [List activities, stakeholders, and objectives for a specific project]()
+
+```sql
+SELECT
+p.ProjectID,
+p.Name AS ProjectName,
+a.Name AS ActivityName,
+s.Name AS StakeholderName,
+o.Description AS ObjectiveDescription
+FROM
+Projects p
+LEFT JOIN
+Activities a ON p.ProjectID = a.ProjectID
+LEFT JOIN
+Stakeholders s ON p.ProjectID = s.ProjectID
+LEFT JOIN
+Objectives o ON p.ProjectID = o.ProjectID
+WHERE
+p.ProjectID = 1; -- Replace "1" with desired ProjectID
+```
 
 
 
