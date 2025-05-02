@@ -281,7 +281,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-## [Project Stakeholder]():
+# [Project Stakeholder]():
 
 ### - [Briefing]():
 
@@ -344,7 +344,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-## 6. Physical Model (SQL Schema)
+## [6.]() Physical Model (SQL Schema)
 
 
 ```sql
@@ -482,7 +482,7 @@ p.ProjectID = 1; -- Replace "1" with desired ProjectID
 
 <br>
 
-## 8. Drop Tables (Oracle Live SQL)
+## [8.]() Drop Tables (Oracle Live SQL)
 
 To delete tables safely respecting foreign key constraints, drop in this order:
 
