@@ -299,6 +299,14 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 - Objectives: Store objectives for each project.
 - Schedule tracking: Include timelines for projects and activities.
 
+<br>
+
+2. List of Stakeholders
+   
+- [Head of Architecture](): Oversees project creation and management.
+- [Project Managers](): Manage individual projects and activities.
+- [Team Members](): Execute activities within projects.
+- [Clients: Provid]()e requirements and feedback.
 
 
 
