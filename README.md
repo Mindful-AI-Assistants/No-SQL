@@ -281,6 +281,26 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
+## [Project Stakeholder]():
+
+### - [Briefing]():
+
+- The head of architecture of a company needs to manage the creation of projects within the company. 
+- Your company was asked to create a database to store project data. In this request,
+- Your company must deliver a report with the following elements: A list of requirements List of stakeholders Conceptual Model Logical Model Physical Model SQL Code Creation of the template on livesql.oracle.com. Search and define: Stakeholders:
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
 ### 🙌 Acknowledgements
 
 Special thanks to Professor [Daniel Gatti]() for guidance throughout this project.
