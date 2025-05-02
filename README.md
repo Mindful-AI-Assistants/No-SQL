@@ -347,7 +347,16 @@ The physical model includes the SQL schema for the database.
 
 <br>
 
+7. SQL Code
+Below is the SQL code to create the database schema:
 
+<br>
+
+-- Create Stakeholders table
+8. Template on livesql.oracle.com
+You can copy the above SQL code and execute it on LiveSQL to create the database schema.
+
+<br>
 
 
 
