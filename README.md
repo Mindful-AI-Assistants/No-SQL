@@ -301,7 +301,7 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-2. List of Stakeholders
+2. [List of Stakeholders]()
    
 - [Head of Architecture](): Oversees project creation and management.
 - [Project Managers](): Manage individual projects and activities.
