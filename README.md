@@ -332,6 +332,29 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
+## [5](). Logical Model (Tables)
+
+| Table       | Columns                                      |
+|-------------|----------------------------------------------|
+| Projects    | ProjectID, Name, Description, StartDate, EndDate, Status |
+| Activities  | ActivityID, Name, Description, StartDate, EndDate, ProjectID |
+| Stakeholders| StakeholderID, Name, Role, ProjectID         |
+| Objectives  | ObjectiveID, Description, ProjectID          |
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
