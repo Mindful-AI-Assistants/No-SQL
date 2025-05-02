@@ -322,9 +322,15 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
+## [4.]() Conceptual Model
 
+- [**Entities**](): Project, Activity, Stakeholder, Objective.
+- [**Relationships**]():
+  - A project has multiple activities.
+  - A project has multiple stakeholders.
+  - A project has multiple objectives.
 
-
+<br>
 
 
 
