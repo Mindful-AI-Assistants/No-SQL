@@ -441,6 +441,26 @@ JOIN
 Projects p ON s.ProjectID = p.ProjectID;
 ```
 
+<br>
+
+### [List all objectives with project details]()
+
+```sql
+SELECT
+o.ObjectiveID,
+o.Description AS ObjectiveDescription,
+p.Name AS ProjectName,
+p.Description AS ProjectDescription
+FROM
+Objectives o
+JOIN
+Projects p ON o.ProjectID = p.ProjectID;
+```
+
+
+
+
+
 
 
 
