@@ -642,9 +642,9 @@ INSERT INTO Contents (title, priority_level) VALUES
 
 #
 
-### **Sample Queries (DQL)**
+### [**Sample Queries (DQL)**]()
 
-1. **Active Content in a Category**
+[1.]() **Active Content in a Category**
 
 ```sql
 SELECT c.title, cat.name 
@@ -655,7 +655,7 @@ WHERE c.expiration_date > NOW()
   AND cat.name = 'General News';
 ```
 
-2. **Today’s Schedule for VideoWall ID 1**
+[2.]() **Today’s Schedule for VideoWall ID 1**
 
 ```sql
 SELECT c.title, s.start_time, s.end_time 
@@ -665,7 +665,7 @@ WHERE s.videowall_id = 1
   AND DATE(s.start_time) = CURDATE();
 ```
 
-3. **High-Priority News (Last 7 Days)**
+[3.]() **High-Priority News (Last 7 Days)**
 
 ```sql
 SELECT title, creation_date 
@@ -676,7 +676,7 @@ WHERE priority_level = 'High'
 
 #
 
-### **Evaluation \& Deliverables**
+### [**Evaluation \& Deliverables**]()
 
 - **Modelling Document**: ER diagram, table descriptions, and normalization proof.
 - **SQL Scripts**: DDL, DML, and DQL files.
