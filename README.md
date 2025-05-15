@@ -517,7 +517,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 ## [Project VideoWall Database - in DBeaver]() 
 
 
-### [1.]() How to do all this in DBeaver
+###  How to do all this in DBeaver
 
 - **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
 - **Open SQL Editor**: Right-click your database → SQL Editor → New SQL Script.
@@ -530,75 +530,26 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 #
 
-### [2](). Create a MySQL Database (Locally or Remote)
+### **Database Modelling**
 
-- If you have a local MySQL server or remote MySQL access, create a new database, e.g.:
+#### **[1.]() Entity Identification \& Conceptual Model**
 
-```sql
-CREATE DATABASE videowall_db;
-USE videowall_db;
-```
-#
+Key entities include:
 
-### [3.]() Create Tables (DDL)
+- **VideoWalls**: ID, name, location[^7]
+- **Contents**: ID, title, description, creation_date, expiration_date, priority_level[^7]
+- **Categories**: ID, name (e.g., "General News")[^7]
+- **Media**: ID, content_id, media_type (text/image/video), URL/path[^7]
+- **Schedules**: ID, content_id, videowall_id, start_time, end_time[^7]
 
-- Run the following SQL script in DBeaver’s SQL Editor to create the tables and relationships:
+**Relationships**:
 
-```sql
--- VideoWalls table: stores screens/video walls
-CREATE TABLE VideoWalls (
-  videowall_id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  location VARCHAR(200)
-);
+- Content → Categories (M:N via `ContentCategories` associative table)[^7]
+- Content → Media (1:N)
+- Content → Schedules (1:N)
+- VideoWalls → Schedules (1:N)[^7]
 
--- Contents table: stores all types of content
-CREATE TABLE Contents (
-  content_id INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(200) NOT NULL,
-  description TEXT,
-  creation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-  expiration_date DATETIME,
-  priority_level ENUM('Low', 'Medium', 'High') NOT NULL
-);
 
--- Categories table: content categories
-CREATE TABLE Categories (
-  category_id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(50) UNIQUE NOT NULL
-);
-
--- Associative table for many-to-many relation between Contents and Categories
-CREATE TABLE ContentCategories (
-  content_id INT,
-  category_id INT,
-  PRIMARY KEY (content_id, category_id),
-  FOREIGN KEY (content_id) REFERENCES Contents(content_id) ON DELETE CASCADE,
-  FOREIGN KEY (category_id) REFERENCES Categories(category_id) ON DELETE CASCADE
-);
-
--- Media table: stores media associated with content
-CREATE TABLE Media (
-  media_id INT PRIMARY KEY AUTO_INCREMENT,
-  content_id INT,
-  media_type ENUM('text', 'image', 'video') NOT NULL,
-  url VARCHAR(500) NOT NULL,
-  FOREIGN KEY (content_id) REFERENCES Contents(content_id) ON DELETE CASCADE
-);
-
--- Schedules table: schedules content display on VideoWalls
-CREATE TABLE Schedules (
-  schedule_id INT PRIMARY KEY AUTO_INCREMENT,
-  content_id INT,
-  videowall_id INT,
-  start_time DATETIME NOT NULL,
-  end_time DATETIME NOT NULL,
-  FOREIGN KEY (content_id) REFERENCES Contents(content_id) ON DELETE CASCADE,
-  FOREIGN KEY (videowall_id) REFERENCES VideoWalls(videowall_id) ON DELETE CASCADE
-);
-```
-
-#
 
 
 
