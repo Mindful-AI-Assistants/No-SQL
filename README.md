@@ -513,10 +513,10 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 <br><br>
 
 
-## [Project VideoWall Database - in DBeaver]() 
+## [Project VideoWall Database]() 
 
 
-###  How to do all this in DBeaver
+###  [How to do all this in DBeaver]()
 
 - **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
 - **Open SQL Editor**: Right-click your database → SQL Editor → New SQL Script.
@@ -529,7 +529,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 #
 
-### **Database Modelling**
+### [**Database Modelling**]()
 
 #### **[1.]() Entity Identification \& Conceptual Model**
 
@@ -550,7 +550,7 @@ Key entities include:
 
 #
 
-#### **2. Logical Model (3NF Normalized)**
+#### **[2.]() Logical Model (3NF Normalized)**
 
 | Table | Key Attributes | Relationships |
 | :-- | :-- | :-- |
@@ -562,7 +562,85 @@ Key entities include:
 | `Schedules` | schedule_id (PK), content_id (FK), videowall_id (FK), start_time, end_time |  |
 
 
+#
 
+#### **[3.]() Physical Model (DDL Script)**
+
+```sql
+CREATE TABLE VideoWalls (
+  videowall_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  location VARCHAR(200)
+);
+
+CREATE TABLE Contents (
+  content_id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(200) NOT NULL,
+  description TEXT,
+  creation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  expiration_date DATETIME,
+  priority_level ENUM('Low', 'Medium', 'High') NOT NULL
+);
+
+CREATE TABLE Categories (
+  category_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE ContentCategories (
+  content_id INT,
+  category_id INT,
+  PRIMARY KEY (content_id, category_id),
+  FOREIGN KEY (content_id) REFERENCES Contents(content_id),
+  FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+);
+
+CREATE TABLE Media (
+  media_id INT PRIMARY KEY AUTO_INCREMENT,
+  content_id INT,
+  media_type ENUM('text', 'image', 'video') NOT NULL,
+  url VARCHAR(500) NOT NULL,
+  FOREIGN KEY (content_id) REFERENCES Contents(content_id)
+);
+
+CREATE TABLE Schedules (
+  schedule_id INT PRIMARY KEY AUTO_INCREMENT,
+  content_id INT,
+  videowall_id INT,
+  start_time DATETIME NOT NULL,
+  end_time DATETIME NOT NULL,
+  FOREIGN KEY (content_id) REFERENCES Contents(content_id),
+  FOREIGN KEY (videowall_id) REFERENCES VideoWalls(videowall_id)
+);
+```
+
+#
+
+### [**Implementation**]()
+
+1. **Create Account \& Database**
+    - Visit [www.freesqldatabase.com](https://www.freesqldatabase.com), register, and create a database[^2][^3].
+    - Note credentials: hostname, database name, username, password[^2][^3].
+2. **Connect via MySQL Workbench**
+    - Open MySQL Workbench → Click `+` under "MySQL Connections"[^4].
+    - Enter hostname, username, and password from freesqldatabase.com[^4].
+    - Test connection and save[^4].
+3. **Execute DDL Script**
+    - Open the generated SQL script in MySQL Workbench and run it in the connected database[^1][^4].
+4. **Populate Data (DML)**
+Example INSERT statements:
+
+```sql
+INSERT INTO VideoWalls (name, location) VALUES 
+('Main Reception', 'Building A Lobby'),
+('Cafeteria Screen', 'Block B Floor 2');
+
+INSERT INTO Contents (title, priority_level) VALUES 
+('IT Maintenance Alert', 'High'),
+('Today’s Special Menu', 'Medium');
+```
+
+#
 
 
 
