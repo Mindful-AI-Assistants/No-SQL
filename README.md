@@ -34,6 +34,8 @@
 
 #### ➣➢ Redis [Database](https://cloud.redis.io/#/new-customer/new-database)
 
+#### ➣➢ [Free Sql Database](https://www.freesqldatabase.com/)
+
 #### ➣➢ Kepler [Geolocation](https://kepler.gl/)
 
 #### ➣➢ [Mermaid](https://mermaid.js.org/community/contributing.html) FlowChart and Diagrams
