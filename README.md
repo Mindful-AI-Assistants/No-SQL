@@ -510,9 +510,8 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 4. Run the scripts to create tables, insert data, query, or drop tables.
 
 
-<br>
+<br><br>
 
-#
 
 ## [Project VideoWall Database - in DBeaver]() 
 
@@ -548,6 +547,19 @@ Key entities include:
 - Content → Media (1:N)
 - Content → Schedules (1:N)
 - VideoWalls → Schedules (1:N)[^7]
+
+#
+
+#### **2. Logical Model (3NF Normalized)**
+
+| Table | Key Attributes | Relationships |
+| :-- | :-- | :-- |
+| `VideoWalls` | videowall_id (PK), name, location | Linked to `Schedules` |
+| `Contents` | content_id (PK), title, description, creation_date, expiration_date, priority | Linked to `Media`, `Schedules`, `ContentCategories` |
+| `Categories` | category_id (PK), name | Linked via `ContentCategories` |
+| `ContentCategories` | content_id (FK), category_id (FK) | Composite PK |
+| `Media` | media_id (PK), content_id (FK), type, url |  |
+| `Schedules` | schedule_id (PK), content_id (FK), videowall_id (FK), start_time, end_time |  |
 
 
 
