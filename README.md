@@ -642,6 +642,49 @@ INSERT INTO Contents (title, priority_level) VALUES
 
 #
 
+### **Sample Queries (DQL)**
+
+1. **Active Content in a Category**
+
+```sql
+SELECT c.title, cat.name 
+FROM Contents c
+JOIN ContentCategories cc ON c.content_id = cc.content_id
+JOIN Categories cat ON cc.category_id = cat.category_id
+WHERE c.expiration_date > NOW() 
+  AND cat.name = 'General News';
+```
+
+2. **Today’s Schedule for VideoWall ID 1**
+
+```sql
+SELECT c.title, s.start_time, s.end_time 
+FROM Schedules s
+JOIN Contents c ON s.content_id = c.content_id
+WHERE s.videowall_id = 1 
+  AND DATE(s.start_time) = CURDATE();
+```
+
+3. **High-Priority News (Last 7 Days)**
+
+```sql
+SELECT title, creation_date 
+FROM Contents 
+WHERE priority_level = 'High' 
+  AND creation_date >= NOW() - INTERVAL 7 DAY;
+```
+
+#
+
+### **Evaluation \& Deliverables**
+
+- **Modelling Document**: ER diagram, table descriptions, and normalization proof.
+- **SQL Scripts**: DDL, DML, and DQL files.
+- **Presentation**: Screenshots of Workbench tables and query results.
+
+For troubleshooting, ensure indexes are added for frequently queried columns (e.g., `expiration_date`) to optimize performance[^6]. Use `EXPLAIN` to analyze query execution plans.
+
+By following these steps, students can effectively design, implement, and test a VideoWall database system
 
 
 
