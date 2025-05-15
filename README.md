@@ -509,9 +509,12 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 3. Copy and paste the SQL code blocks above into the worksheet.
 4. Run the scripts to create tables, insert data, query, or drop tables.
 
-<br><br>
 
-## [Building VideoWall Database]() in DBeaver
+<br>
+
+#
+
+## [Project VideoWall Database - in DBeaver]() 
 
 
 ### [1.]() How to do all this in DBeaver
