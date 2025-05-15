@@ -284,8 +284,8 @@ db.usuarios.deleteOne({ name: "Carlos Lima" });
 
 <br>
 
-# [Project Stakeholder]():
-
+# 📈 [Project Stakeholder]():
+ 
 ### - [Briefing]():
 
 - The head of architecture of a company needs to manage the creation of projects within the company. 
@@ -513,7 +513,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 <br><br>
 
 
-## [Project VideoWall Database]() 
+## 🎥 [Project VideoWall Database]() 
 
 
 ###  [How to do all this in DBeaver]()
