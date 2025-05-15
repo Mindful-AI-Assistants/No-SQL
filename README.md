@@ -535,7 +535,67 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 CREATE DATABASE videowall_db;
 USE videowall_db;
 ```
+#
 
+### [3.]() Create Tables (DDL)
+
+- Run the following SQL script in DBeaver’s SQL Editor to create the tables and relationships:
+
+```sql
+-- VideoWalls table: stores screens/video walls
+CREATE TABLE VideoWalls (
+  videowall_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  location VARCHAR(200)
+);
+
+-- Contents table: stores all types of content
+CREATE TABLE Contents (
+  content_id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(200) NOT NULL,
+  description TEXT,
+  creation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  expiration_date DATETIME,
+  priority_level ENUM('Low', 'Medium', 'High') NOT NULL
+);
+
+-- Categories table: content categories
+CREATE TABLE Categories (
+  category_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- Associative table for many-to-many relation between Contents and Categories
+CREATE TABLE ContentCategories (
+  content_id INT,
+  category_id INT,
+  PRIMARY KEY (content_id, category_id),
+  FOREIGN KEY (content_id) REFERENCES Contents(content_id) ON DELETE CASCADE,
+  FOREIGN KEY (category_id) REFERENCES Categories(category_id) ON DELETE CASCADE
+);
+
+-- Media table: stores media associated with content
+CREATE TABLE Media (
+  media_id INT PRIMARY KEY AUTO_INCREMENT,
+  content_id INT,
+  media_type ENUM('text', 'image', 'video') NOT NULL,
+  url VARCHAR(500) NOT NULL,
+  FOREIGN KEY (content_id) REFERENCES Contents(content_id) ON DELETE CASCADE
+);
+
+-- Schedules table: schedules content display on VideoWalls
+CREATE TABLE Schedules (
+  schedule_id INT PRIMARY KEY AUTO_INCREMENT,
+  content_id INT,
+  videowall_id INT,
+  start_time DATETIME NOT NULL,
+  end_time DATETIME NOT NULL,
+  FOREIGN KEY (content_id) REFERENCES Contents(content_id) ON DELETE CASCADE,
+  FOREIGN KEY (videowall_id) REFERENCES VideoWalls(videowall_id) ON DELETE CASCADE
+);
+```
+
+#
 
 
 
