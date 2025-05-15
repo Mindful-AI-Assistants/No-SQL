@@ -509,6 +509,32 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 3. Copy and paste the SQL code blocks above into the worksheet.
 4. Run the scripts to create tables, insert data, query, or drop tables.
 
+<br><br>
+
+## [Building VideoWall Database]() in DBeaver
+
+
+### [1.]() How to do all this in DBeaver
+
+- **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
+- **Open SQL Editor**: Right-click your database → SQL Editor → New SQL Script.
+- **Paste and run the DDL script** to create tables.
+- **Paste and run the DML script** to insert sample data.
+- **Run the DQL queries** to test and verify data retrieval.
+- **Use the Database Navigator** pane to visually inspect tables, columns, and foreign keys.
+- **Use DBeaver’s ER Diagram tool**: Right-click database or tables → ER Diagram to visualize schema.
+- **Export results**: After running queries, right-click results → Export to CSV, JSON, etc.
+
+#
+
+### [2](). Create a MySQL Database (Locally or Remote)
+
+- If you have a local MySQL server or remote MySQL access, create a new database, e.g.:
+
+```sql
+CREATE DATABASE videowall_db;
+USE videowall_db;
+```
 
 
 
