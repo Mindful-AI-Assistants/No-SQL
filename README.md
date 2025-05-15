@@ -34,7 +34,7 @@
 
 #### ➣➢ Redis [Database](https://cloud.redis.io/#/new-customer/new-database)
 
-#### ➣➢ [Free Sql Database]()
+#### ➣➢ [Free Sql Database](https://www.freesqldatabase.com/)
 
 #### ➣➢ Kepler [Geolocation](https://kepler.gl/)
 
