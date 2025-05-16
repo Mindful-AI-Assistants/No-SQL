@@ -55,7 +55,7 @@
 
 #### ➣➢ [DBeaver](https://dbeaver.io/download/) -  in association with MySQL Workbench, both locally and remotely.
 
-#### ➣➢ [MySQL](https://www.mysql.com/products/workbench/) Workbench -  both locally and remotely.
+#### ➣➢ [MySQL Workbench](https://www.mysql.com/products/workbench/) -  both locally and remotely.
 
 
 <br>
