@@ -608,8 +608,61 @@ The logical model details the tables, columns, and relationships as they will be
 
 <br>
 
+### [Type]()
 
+| Column | Type    | Key |
+|--------|---------|-----|
+| Id     | int     | PK  |
+| Type   | varchar |     |
 
+<br>
+
+### [Content]()
+
+| Column        | Type    | Key             |
+|---------------|---------|-----------------|
+| Id            | int     | PK              |
+| Title         | varchar |                 |
+| Description   | varchar |                 |
+| Path          | varchar |                 |
+| Id_User       | int     | FK (User)       |
+| Id_Type       | int     | FK (Type)       |
+| Id_Priority   | int     | FK (Priority)   |
+| Data_Creation | date    |                 |
+| Date_Validity | date    |                 |
+
+<br>
+
+### [Category]()
+
+| Column | Type    | Key |
+|--------|---------|-----|
+| Id     | int     | PK  |
+| Name   | varchar |     |
+
+<br>
+
+### [Category_Content]()
+
+| Column      | Type | Key                   |
+|-------------|------|----------------------|
+| Id_Content  | int  | PK, FK (Content)     |
+| Id_Category | int  | PK, FK (Category)    |
+
+<br>
+
+### [Exhibition]()
+
+| Column     | Type | Key                   |
+|------------|------|----------------------|
+| Id_Content | int  | PK, FK (Content)     |
+| Id_Screen  | int  | PK, FK (Screen)      |
+| Data_Start | date | PK                   |
+| Data_End   | date |                      |
+
+<br>
+
+## [5.]() SQL DDL Code
 
 
 
