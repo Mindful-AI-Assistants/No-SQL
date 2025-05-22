@@ -523,6 +523,10 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 ## 🎥 [Project VideoWall Database]() 
 
 
+
+https://lucid.app/lucidchart/4b79b546-006e-4d92-8cf3-3d6e17d46570/edit?invitationId=inv_d50f269f-8059-41fc-920f-023722382fa9&page=0_0#
+
+
 ###  [How to do all this in DBeaver]()
 
 - **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
