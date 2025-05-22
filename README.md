@@ -573,7 +573,10 @@ The conceptual model provides a high-level overview of the main entities and the
 
 The logical model details the tables, columns, and relationships as they will be implemented in MySQL.
 
-![Logical Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/f4ab3957-5266-432b-872d-80a1d9d4ae27/2-DB-Logical-Model.jpg)
+<br>
+
+ <p align="center">
+<img src="https://github.com/user-attachments/assets/a4f9abe2-807c-4b0d-8f57-40cc2811aeca"/>
 
 <br>
 
