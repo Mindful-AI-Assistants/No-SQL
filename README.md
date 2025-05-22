@@ -524,21 +524,12 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 <br>
 
+This project provides a MySQL database model for managing digital content on video walls, designed for use with DBeaver. It includes conceptual and logical models, Markdown tables, and ready-to-use SQL code.
 
-###  ➢ [Access here link](https://lucid.app/lucidchart/4b79b546-006e-4d92-8cf3-3d6e17d46570/edit?invitationId=inv_d50f269f-8059-41fc-920f-023722382fa9&page=0_0#) for Conceptual and Logical Diagrams in the Lucid.app editor
-
-
-![Image](https://github.com/user-attachments/assets/8d0ea6a8-27f7-4488-b79b-3dafdb4d606c)
-
-#
-
-![Image](https://github.com/user-attachments/assets/a4f9abe2-807c-4b0d-8f57-40cc2811aeca)
+<br>
 
 
-
-
-
-###  [How to do all this in DBeaver]()
+##  [How to do all this in DBeaver]()
 
 - **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
 - **Open SQL Editor**: Right-click your database → SQL Editor → New SQL Script.
@@ -551,162 +542,47 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 #
 
-### [**Database Modelling**]()
-
-#### **[1.]() Entity Identification \& Conceptual Model**
-
-Key entities include:
-
-- **VideoWalls**: ID, name, location[^7]
-- **Contents**: ID, title, description, creation_date, expiration_date, priority_level[^7]
-- **Categories**: ID, name (e.g., "General News")[^7]
-- **Media**: ID, content_id, media_type (text/image/video), URL/path[^7]
-- **Schedules**: ID, content_id, videowall_id, start_time, end_time[^7]
-
-**Relationships**:
-
-- Content → Categories (M:N via `ContentCategories` associative table)[^7]
-- Content → Media (1:N)
-- Content → Schedules (1:N)
-- VideoWalls → Schedules (1:N)[^7]
-
-#
-
-#### **[2.]() Logical Model (3NF Normalized)**
-
-| Table | Key Attributes | Relationships |
-| :-- | :-- | :-- |
-| `VideoWalls` | videowall_id (PK), name, location | Linked to `Schedules` |
-| `Contents` | content_id (PK), title, description, creation_date, expiration_date, priority | Linked to `Media`, `Schedules`, `ContentCategories` |
-| `Categories` | category_id (PK), name | Linked via `ContentCategories` |
-| `ContentCategories` | content_id (FK), category_id (FK) | Composite PK |
-| `Media` | media_id (PK), content_id (FK), type, url |  |
-| `Schedules` | schedule_id (PK), content_id (FK), videowall_id (FK), start_time, end_time |  |
+## 1. Conceptual Model
 
 
-#
+![Conceptual Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/4d861d7b-89cb-4182-98f5-a39e4f51b3fa/1-DB-Conceptrual-Model.jpg)
 
-#### **[3.]() Physical Model (DDL Script)**
+**Entities:**
 
-```sql
-CREATE TABLE VideoWalls (
-  videowall_id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  location VARCHAR(200)
-);
+- Screen
+- Exhibition
+- Content
+- Priority
+- User
+- Type
+- Category_Content
+- Category
 
-CREATE TABLE Contents (
-  content_id INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(200) NOT NULL,
-  description TEXT,
-  creation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-  expiration_date DATETIME,
-  priority_level ENUM('Low', 'Medium', 'High') NOT NULL
-);
+**Relationships:**
 
-CREATE TABLE Categories (
-  category_id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(50) UNIQUE NOT NULL
-);
+- A Screen can have multiple Exhibitions.
+- Exhibition links Screen and Content.
+- Content is associated with Priority, User, and Type.
+- Content can belong to mu
 
-CREATE TABLE ContentCategories (
-  content_id INT,
-  category_id INT,
-  PRIMARY KEY (content_id, category_id),
-  FOREIGN KEY (content_id) REFERENCES Contents(content_id),
-  FOREIGN KEY (category_id) REFERENCES Categories(category_id)
-);
+<br>
 
-CREATE TABLE Media (
-  media_id INT PRIMARY KEY AUTO_INCREMENT,
-  content_id INT,
-  media_type ENUM('text', 'image', 'video') NOT NULL,
-  url VARCHAR(500) NOT NULL,
-  FOREIGN KEY (content_id) REFERENCES Contents(content_id)
-);
 
-CREATE TABLE Schedules (
-  schedule_id INT PRIMARY KEY AUTO_INCREMENT,
-  content_id INT,
-  videowall_id INT,
-  start_time DATETIME NOT NULL,
-  end_time DATETIME NOT NULL,
-  FOREIGN KEY (content_id) REFERENCES Contents(content_id),
-  FOREIGN KEY (videowall_id) REFERENCES VideoWalls(videowall_id)
-);
-```
 
-#
 
-### [**Implementation**]()
 
-1. **Create Account \& Database**
-    - Visit [www.freesqldatabase.com](https://www.freesqldatabase.com), register, and create a database[^2][^3].
-    - Note credentials: hostname, database name, username, password[^2][^3].
-2. **Connect via MySQL Workbench**
-    - Open MySQL Workbench → Click `+` under "MySQL Connections"[^4].
-    - Enter hostname, username, and password from freesqldatabase.com[^4].
-    - Test connection and save[^4].
-3. **Execute DDL Script**
-    - Open the generated SQL script in MySQL Workbench and run it in the connected database[^1][^4].
-4. **Populate Data (DML)**
-Example INSERT statements:
 
-```sql
-INSERT INTO VideoWalls (name, location) VALUES 
-('Main Reception', 'Building A Lobby'),
-('Cafeteria Screen', 'Block B Floor 2');
 
-INSERT INTO Contents (title, priority_level) VALUES 
-('IT Maintenance Alert', 'High'),
-('Today’s Special Menu', 'Medium');
-```
 
-#
 
-### [**Sample Queries (DQL)**]()
 
-[1.]() **Active Content in a Category**
 
-```sql
-SELECT c.title, cat.name 
-FROM Contents c
-JOIN ContentCategories cc ON c.content_id = cc.content_id
-JOIN Categories cat ON cc.category_id = cat.category_id
-WHERE c.expiration_date > NOW() 
-  AND cat.name = 'General News';
-```
 
-[2.]() **Today’s Schedule for VideoWall ID 1**
 
-```sql
-SELECT c.title, s.start_time, s.end_time 
-FROM Schedules s
-JOIN Contents c ON s.content_id = c.content_id
-WHERE s.videowall_id = 1 
-  AND DATE(s.start_time) = CURDATE();
-```
 
-[3.]() **High-Priority News (Last 7 Days)**
 
-```sql
-SELECT title, creation_date 
-FROM Contents 
-WHERE priority_level = 'High' 
-  AND creation_date >= NOW() - INTERVAL 7 DAY;
-```
 
-#
 
-### [**Evaluation \& Deliverables**]()
-
-- **Modelling Document**: ER diagram, table descriptions, and normalization proof.
-- **SQL Scripts**: DDL, DML, and DQL files.
-- **Presentation**: Screenshots of Workbench tables and query results.
-
-For troubleshooting, ensure indexes are added for frequently queried columns (e.g., `expiration_date`) to optimize performance[^6]. Use `EXPLAIN` to analyze query execution plans.
-
-By following these steps, students can effectively design, implement, and test a VideoWall database system
 
 
 
