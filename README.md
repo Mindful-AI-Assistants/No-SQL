@@ -523,8 +523,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 ## 🎥 [Project VideoWall Database]() 
 
 
-
-![Image](https://github.com/user-attachments/assets/a4f9abe2-807c-4b0d-8f57-40cc2811aeca)
+![Image](https://github.com/user-attachments/assets/8d0ea6a8-27f7-4488-b79b-3dafdb4d606c)
 
 #
 
