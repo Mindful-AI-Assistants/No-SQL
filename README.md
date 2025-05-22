@@ -517,7 +517,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 4. Run the scripts to create tables, insert data, query, or drop tables.
 
 
-<br><br>
+<br><br><br>
 
 
 # 🎥  Video Wall SQL Project
@@ -531,6 +531,10 @@ Special thanks to Professor [Daniel Gatti]() for guidance throughout this projec
 <br>
 
 This project provides a complete database model for managing digital content on video walls, using MySQL and DBeaver. Here you will find the conceptual and logical models, Markdown documentation for all tables, and ready-to-use SQL DDL code.
+
+<br>
+
+#### ➢ [Access hereb link]() for Conceptual and Logical Diagrams in the Lucid.app editor
 
 <br>
 
