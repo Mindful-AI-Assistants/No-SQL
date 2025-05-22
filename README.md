@@ -522,6 +522,14 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 # 🎥  Video Wall SQL Project
 
+<br>
+
+### 💙 Acknowledgements
+
+Special thanks to Professor [Daniel Gatti]() for guidance throughout this project.
+
+<br>
+
 This project provides a complete database model for managing digital content on video walls, using MySQL and DBeaver. Here you will find the conceptual and logical models, Markdown documentation for all tables, and ready-to-use SQL DDL code.
 
 <br>
@@ -633,9 +641,6 @@ The logical model details the tables, columns, and relationships as they will be
 
 <br><br><br><br>
 
-### 💙 Acknowledgements
-
-Special thanks to Professor [Daniel Gatti]() for guidance throughout this project.
 
 <br>
 
