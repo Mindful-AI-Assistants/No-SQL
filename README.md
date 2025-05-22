@@ -729,6 +729,14 @@ FOREIGN KEY (Id_Screen) REFERENCES Screen(Id)
 );
 ```
 
+<br>
+
+## [6.]() Summary
+
+- All tables and relationships from the logical model are included.
+- SQL code is complete and ready for use in MySQL.
+- Markdown tables provide clear documentation for each table.
+- Diagrams help visualize both the conceptual and logical structure.
 
 
 
