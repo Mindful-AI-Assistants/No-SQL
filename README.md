@@ -522,8 +522,10 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 ## 🎥 [Project VideoWall Database]() 
 
+<br>
 
-###  [Access here link]() for Conceptual and Logical Diagrams in the Lucid.app editor
+
+###  ➢ [Access here link](https://lucid.app/lucidchart/4b79b546-006e-4d92-8cf3-3d6e17d46570/edit?invitationId=inv_d50f269f-8059-41fc-920f-023722382fa9&page=0_0#) for Conceptual and Logical Diagrams in the Lucid.app editor
 
 
 ![Image](https://github.com/user-attachments/assets/8d0ea6a8-27f7-4488-b79b-3dafdb4d606c)
@@ -533,7 +535,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 ![Image](https://github.com/user-attachments/assets/a4f9abe2-807c-4b0d-8f57-40cc2811aeca)
 
 
-https://lucid.app/lucidchart/4b79b546-006e-4d92-8cf3-3d6e17d46570/edit?invitationId=inv_d50f269f-8059-41fc-920f-023722382fa9&page=0_0#
+
 
 
 ###  [How to do all this in DBeaver]()
