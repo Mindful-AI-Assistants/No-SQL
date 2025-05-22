@@ -520,7 +520,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 <br><br>
 
 
-## 🎥 [Project VideoWall Database]() 
+# 🎥 [Project VideoWall Database]() 
 
 <br>
 
@@ -529,7 +529,7 @@ This project provides a MySQL database model for managing digital content on vid
 <br>
 
 
-##  [How to do all this in DBeaver]()
+## 1. [How to do all this in DBeaver]()
 
 - **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
 - **Open SQL Editor**: Right-click your database → SQL Editor → New SQL Script.
@@ -542,7 +542,7 @@ This project provides a MySQL database model for managing digital content on vid
 
 #
 
-## 1. Conceptual Model
+## 2. Conceptual Model
 
 
 ![Conceptual Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/4d861d7b-89cb-4182-98f5-a39e4f51b3fa/1-DB-Conceptrual-Model.jpg)
@@ -567,7 +567,35 @@ This project provides a MySQL database model for managing digital content on vid
 
 <br>
 
+-e    | Key |
+|---------------|---------|-----|
+| Id            | int     | PK  |
+| Localization  | varchar |     |
 
+
+<br>
+
+
+### Priority
+
+| Column         | Type    | Key |
+|----------------|---------|-----|
+| Id             | int     | PK  |
+| Classification | varchar |     |
+
+
+<br>
+
+### User
+
+| Column    | Type    | Key |
+|-----------|---------|-----|
+| Id        | int     | PK  |
+| Nome      | varchar |     |
+| Last_name | varchar |     |
+| email     | varchar |     |
+
+### Type--
 
 
 
