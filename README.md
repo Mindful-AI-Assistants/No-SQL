@@ -520,82 +520,44 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 <br><br>
 
 
-# 🎥 [Project VideoWall Database]() 
+# 🎥  Video Wall SQL Project
+
+This repository provides a complete database model for managing digital content on video walls, using MySQL and DBeaver. Here you will find the conceptual and logical models, Markdown documentation for all tables, and ready-to-use SQL DDL code.
 
 <br>
 
-This project provides a MySQL database model for managing digital content on video walls, designed for use with DBeaver. It includes conceptual and logical models, Markdown tables, and ready-to-use SQL code.
+## [1.]() How to Use in DBeaver
+
+- Connect to your MySQL server.
+- Open DBeaver and create a new database connection.
+- Open the SQL Editor: Right-click your database > SQL Editor > New SQL Script.
+- Paste and run the DDL script below to create the tables.
+- Use DBeaver’s ER Diagram tool to visualize the schema.
+- Refer to the diagrams and Markdown tables below for documentation.
 
 <br>
 
+## [2.]() Conceptual Model
 
-## 1. [How to do all this in DBeaver]()
-
-- **Connect to your MySQL server**: Use the connection wizard to connect to your MySQL database (local or remote).
-- **Open SQL Editor**: Right-click your database → SQL Editor → New SQL Script.
-- **Paste and run the DDL script** to create tables.
-- **Paste and run the DML script** to insert sample data.
-- **Run the DQL queries** to test and verify data retrieval.
-- **Use the Database Navigator** pane to visually inspect tables, columns, and foreign keys.
-- **Use DBeaver’s ER Diagram tool**: Right-click database or tables → ER Diagram to visualize schema.
-- **Export results**: After running queries, right-click results → Export to CSV, JSON, etc.
-
-#
-
-## 2. Conceptual Model
-
+The conceptual model provides a high-level overview of the main entities and their relationships in the Video Wall project.
 
 ![Conceptual Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/4d861d7b-89cb-4182-98f5-a39e4f51b3fa/1-DB-Conceptrual-Model.jpg)
 
-**Entities:**
+### Main Entities
 
-- Screen
-- Exhibition
-- Content
-- Priority
-- User
-- Type
-- Category_Content
-- Category
-
-**Relationships:**
-
-- A Screen can have multiple Exhibitions.
-- Exhibition links Screen and Content.
-- Content is associated with Priority, User, and Type.
-- Content can belong to mu
-
-<br>
-
--e    | Key |
-|---------------|---------|-----|
-| Id            | int     | PK  |
-| Localization  | varchar |     |
-
+- **Screen:** Represents each display unit in the video wall system.
+- **Exhibition:** Links content to screens, defining what is shown and when.
+- **Content:** Digital media or information to be displayed.
+- **Priority:** Classification of content importance.
+- **User:** The person or system responsible for uploading or managing content.
+- **Type:** The type or format of the content.
+- **Category_Content:** Associative entity connecting content to categories.
+- **Category:** Thematic grouping for content.
 
 <br>
 
 
-### Priority
 
-| Column         | Type    | Key |
-|----------------|---------|-----|
-| Id             | int     | PK  |
-| Classification | varchar |     |
-
-
-<br>
-
-### User
-
-| Column    | Type    | Key |
-|-----------|---------|-----|
-| Id        | int     | PK  |
-| Nome      | varchar |     |
-| Last_name | varchar |     |
-| email     | varchar |     |
-
-### Type--
 
 
 
