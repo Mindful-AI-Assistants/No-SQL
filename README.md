@@ -667,7 +667,67 @@ The logical model details the tables, columns, and relationships as they will be
 
 ## [5.]() SQL DDL Code
 
+```sql
+CREATE TABLE Screen (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Localization VARCHAR(255) NOT NULL
+);
 
+CREATE TABLE Priority (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Classification VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE User (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Nome VARCHAR(100) NOT NULL,
+Last_name VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Type (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Type VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Content (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Title VARCHAR(255) NOT NULL,
+Description VARCHAR(255),
+Path VARCHAR(255),
+Id_User INT,
+Id_Type INT,
+Id_Priority INT,
+Data_Creation DATE,
+Date_Validity DATE,
+FOREIGN KEY (Id_User) REFERENCES User(Id),
+FOREIGN KEY (Id_Type) REFERENCES Type(Id),
+FOREIGN KEY (Id_Priority) REFERENCES Priority(Id)
+);
+
+CREATE TABLE Category (
+Id INT PRIMARY KEY AUTO_INCREMENT,
+Name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Category_Content (
+Id_Content INT,
+Id_Category INT,
+PRIMARY KEY (Id_Content, Id_Category),
+FOREIGN KEY (Id_Content) REFERENCES Content(Id),
+FOREIGN KEY (Id_Category) REFERENCES Category(Id)
+);
+
+CREATE TABLE Exhibition (
+Id_Content INT,
+Id_Screen INT,
+Data_Start DATE,
+Data_End DATE,
+PRIMARY KEY (Id_Content, Id_Screen, Data_Start),
+FOREIGN KEY (Id_Content) REFERENCES Content(Id),
+FOREIGN KEY (Id_Screen) REFERENCES Screen(Id)
+);
+```
 
 
 
