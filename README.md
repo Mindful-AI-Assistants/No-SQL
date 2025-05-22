@@ -534,7 +534,7 @@ This project provides a complete database model for managing digital content on 
 
 <br>
 
-#### ➢ [Access hereb link](https://lucid.app/lucidchart/4b79b546-006e-4d92-8cf3-3d6e17d46570/edit?viewport_loc=-5751%2C-1305%2C1511%2C779%2C0_0&invitationId=inv_d50f269f-8059-41fc-920f-023722382fa) for Conceptual and Logical Diagrams in the Lucid.app editor
+#### ➢ [Access hereb link]() for Conceptual and Logical Diagrams in the Lucid.app editor
 
 <br>
 
