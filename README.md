@@ -548,7 +548,7 @@ The conceptual model provides a high-level overview of the main entities and the
 
 <br>
 
-### Main [Entities]():
+### ➢ [Main Entities]():
 
 - **Screen:** Represents each display unit in the video wall system.
 - **Exhibition:** Links content to screens, defining what is shown and when.
@@ -561,12 +561,44 @@ The conceptual model provides a high-level overview of the main entities and the
 
 <br>
 
+## [3.]() Logical Model
 
+The logical model details the tables, columns, and relationships as they will be implemented in MySQL.
 
+![Logical Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/f4ab3957-5266-432b-872d-80a1d9d4ae27/2-DB-Logical-Model.jpg)
 
+<br>
 
+## [4.]() Database Tables (Markdown)
 
+### [Screen]()
 
+| Column        | Type    | Key |
+|---------------|---------|-----|
+| Id            | int     | PK  |
+| Localization  | varchar |     |
+
+<br>
+
+### [Priority]()
+
+| Column         | Type    | Key |
+|----------------|---------|-----|
+| Id             | int     | PK  |
+| Classification | varchar |     |
+
+<br>
+
+### [User]()
+
+| Column    | Type    | Key |
+|-----------|---------|-----|
+| Id        | int     | PK  |
+| Nome      | varchar |     |
+| Last_name | varchar |     |
+| email     | varchar |     |
+
+<br>
 
 
 
