@@ -522,7 +522,7 @@ DROP TABLE Projects CASCADE CONSTRAINTS;
 
 # 🎥  Video Wall SQL Project
 
-This repository provides a complete database model for managing digital content on video walls, using MySQL and DBeaver. Here you will find the conceptual and logical models, Markdown documentation for all tables, and ready-to-use SQL DDL code.
+This project provides a complete database model for managing digital content on video walls, using MySQL and DBeaver. Here you will find the conceptual and logical models, Markdown documentation for all tables, and ready-to-use SQL DDL code.
 
 <br>
 
@@ -543,11 +543,11 @@ The conceptual model provides a high-level overview of the main entities and the
 
 <br>
 
-![Image](https://github.com/user-attachments/assets/8d0ea6a8-27f7-4488-b79b-3dafdb4d606c)
+![Conceptual Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/4d861d7b-89cb-4182-98f5-a39e4f51b3fa/1-DB-Conceptrual-Model.jpg)
 
 <br>
 
-##  [3.]() Main Entities
+### Main [Entities]():
 
 - **Screen:** Represents each display unit in the video wall system.
 - **Exhibition:** Links content to screens, defining what is shown and when.
