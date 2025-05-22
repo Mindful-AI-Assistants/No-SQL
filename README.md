@@ -543,7 +543,8 @@ The conceptual model provides a high-level overview of the main entities and the
 
 <br>
 
-![Conceptual Model](https://pplx-res.cloudinary.com/image/private/user_uploads/5036149/4d861d7b-89cb-4182-98f5-a39e4f51b3fa/1-DB-Conceptrual-Model.jpg)
+ <p align="center">
+<img src="https://github.com/user-attachments/assets/8d0ea6a8-27f7-4488-b79b-3dafdb4d606c"/>
 
 <br>
 
