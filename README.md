@@ -586,12 +586,16 @@ The conceptual model provides a high-level overview of the main entities and the
 
 The logical model details the tables, columns, and relationships as they will be implemented in MySQL.
 
+#
+
 <br>
 
  <p align="center">
 <img src="https://github.com/user-attachments/assets/72fc33cc-bc46-4016-a0b4-b32065032d30"/>
 
 <br>
+
+#
 
 ## [4.]() Physical Model  
 
