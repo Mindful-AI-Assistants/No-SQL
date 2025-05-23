@@ -591,8 +591,6 @@ The logical model details the tables, columns, and relationships as they will be
 
 <br>
 
-#
-
 ## [4.]() Physical Model  
 
 The physical model specifies how the logical data model will be implemented in the chosen database management system (DBMS), such as MySQL. It translates entities and relationships from the logical model into actual database tables, columns, and constraints, including technical details needed for deployment and performance optimization.
