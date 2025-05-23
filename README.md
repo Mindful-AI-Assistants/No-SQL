@@ -560,6 +560,8 @@ The conceptual model provides a high-level overview of the main entities and the
 
 <br>
 
+![Image](https://github.com/user-attachments/assets/b2d1e380-0a9d-411a-afd3-666e4e78eff0)
+
  <p align="center">
 <img src="https://github.com/user-attachments/assets/8d0ea6a8-27f7-4488-b79b-3dafdb4d606c"/>
 
