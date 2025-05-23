@@ -23,6 +23,9 @@
 
 *Under the guidance of [Professor Doctor Daniel Gatti](https://www.linkedin.com/in/dgatti/)*.
 
+<br>
+
+#### ➢➢ [NoSQL](https://www.beautiful.ai/player/-OQx3JeNpwGAaJm4Gpe4/Introducao-a-Banco-de-Dados-NoSQL) Presentation
 
 <br>
 
