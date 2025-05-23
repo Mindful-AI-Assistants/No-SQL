@@ -586,6 +586,8 @@ The logical model details the tables, columns, and relationships as they will be
 
 <br>
 
+![Image](https://github.com/user-attachments/assets/72fc33cc-bc46-4016-a0b4-b32065032d30)
+
  <p align="center">
 <img src="https://github.com/user-attachments/assets/a4f9abe2-807c-4b0d-8f57-40cc2811aeca"/>
 
