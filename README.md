@@ -14,7 +14,19 @@
 
 ### <p align="center"> <img width="485" alt="Automation Workflow" src="https://github.com/user-attachments/assets/a7dd082d-33e9-41df-b5e7-cc3dd359a9b7" />
 
-<br>
+<br><br>
+
+## ⚠️ [Important Notes]()
+
+
+- [Whenever possible](), projects and deliverables developed during the course will be made [publicly accessible]().
+
+- The course emphasizes [**practical, hands-on experience**]() with real datasets to emulate professional consulting scenarios in the field.
+
+- All activities and materials will strictly adhere to the [**academic and ethical guidelines of PUC-SP**](). Any content not authorized for public disclosure will remain [**confidential**]() and stored in [private repositories]().
+
+
+<br><br>
 
 
 ## [About No-SQL Repo]()
